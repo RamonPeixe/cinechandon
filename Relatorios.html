@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Chandon - Relatorios</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon.png">
+</head>
+<body class="body-relatorios">
+    <header class="cabecalho">
+        <a href="Index.html" class="container__titulo"><b class="container__titulo--negrito">Cine</b>Chandon</a>
+        <ul class="opcoes">
+            <li class="opcoes__item"><a href="Salas.html" class="opcoes__link">Salas</a></li>
+            <li class="opcoes__item"><a href="Filmes.html" class="opcoes__link">Filmes</a></li>
+            <li class="opcoes__item"><a href="Sessoes.html" class="opcoes__link">Sessões</a></li>
+            <li class="opcoes__item"><a href="Relatorios.html" class="opcoes__link">Relatórios</a></li>
+        </ul>
+    </header>
+
+    <h1 class="titulo">Relatórios</h1>
+    <form class="form-container">
+      <label for="exibicao">Tipo de Exibição:</label>
+      <input type="text" id="exibicao" name="exibicao" placeholder="Informe o tipo de exibição">
+      <label for="capacidade">Capacidade mínima:</label>
+      <input type="number" id="capacidade" name="capacidade" placeholder="Informe a capacidade mínima">
+      <button type="submit">Gerar Relatório</button>
+    </form>
+  
+    <form class="form-container">
+      <label for="ano">Ano de Lançamento:</label>
+      <input type="number" id="ano" name="ano" placeholder="Informe o ano de lançamento">
+      <label for="ator">Nome do Ator:</label>
+      <input type="text" id="ator" name="ator" placeholder="Informe o nome do ator">
+      <button type="submit">Gerar Relatório</button>
+    </form>
+  
+    <form class="form-container">
+      <label for="dataInicial">Data Inicial:</label>
+      <input type="date" id="dataInicial" name="dataInicial">
+      <label for="dataFinal">Data Final:</label>
+      <input type="date" id="dataFinal" name="dataFinal">
+      <button type="submit">Gerar Relatório</button>
+    </form>
+  
+    <h1 class="titulo">Formulários de Cadastro</h1>
+
+    <form class="form-container">
+      <h2 class="subtitle">Cadastro de Sala</h2>
+      <label for="filmeCodigo">Código:</label>
+      <input type="text" id="filmeCodigo" name="filmeCodigo">
+      <label for="filmeNome">Nome:</label>
+      <input type="text" id="filmeNome" name="filmeNome">
+      <label for="capacidade">Capacidade:</label>
+      <input type="number" id="capacidade" name="capacidade">
+      <label for="tipoExibicao">Tipo de Exibição:</label>
+      <input type="text" id="tipoExibicao" name="tipoExibicao">
+      <label for="acessivel">Acessível:</label>
+      <input type="text" id="acessivel" name="acessivel">
+      <button type="submit">Cadastrar Sala</button>
+    </form>
+  
+    <form class="form-container">
+      <h2 class="subtitle">Cadastro de Filme</h2>
+      <label for="filmeCodigo">Código:</label>
+      <input type="text" id="filmeCodigo" name="filmeCodigo">
+      <label for="filmeNome">Nome:</label>
+      <input type="text" id="filmeNome" name="filmeNome">
+      <label for="anoLancamento">Ano de Lançamento:</label>
+      <input type="number" id="anoLancamento" name="anoLancamento">
+      <label for="diretor">Diretor:</label>
+      <input type="text" id="diretor" name="diretor">
+      <label for="atores">Atores:</label>
+      <input type="text" id="atores" name="atores">
+      <button type="submit">Cadastrar Filme</button>
+    </form>
+  
+    <form class="form-container">
+      <h2 class="subtitle">Cadastro de Sessão</h2>
+      <label for="sessaoFilme">Código do Filme:</label>
+      <input type="text" id="sessaoFilme" name="sessaoFilme">
+      <label for="sessaoSala">Código da Sala:</label>
+      <input type="text" id="sessaoSala" name="sessaoSala">
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data">
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario">
+      <label for="precoIngresso">Preço do Ingresso:</label>
+      <input type="number" id="precoIngresso" name="precoIngresso">
+      <button type="submit">Cadastrar Sessão</button>
+    </form>
+  </body>
+
+<footer class="rodape">
+    <h2>2023 &#169 Projeto fictício sem fins comerciais.</h2>
+</footer>
+</body>
+</html>

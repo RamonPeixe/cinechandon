@@ -1,0 +1,30 @@
+@import url("Styles/header.css");
+@import url("Styles/banner.css");
+@import url("Styles/carrossel.css");
+@import url("Styles/rodape.css");
+@import url("Styles/salas.css");
+@import url("Styles/filmes.css");
+@import url("Styles/sessoes.css");
+@import url("Styles/relatorios.css");
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #444451;
+    --azul:#002F52;
+    --azul-hover:#00589b;
+    --verde: green;
+    --verde-hover: rgb(2, 177, 2);
+    --vermelho: red;
+    --degrade: linear-gradient(97.54deg, #000000 35.49%, #171717 165.37%);
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

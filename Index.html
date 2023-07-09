@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Chandon</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="Assets/favicon.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="Index.html" class="container__titulo"><b class="container__titulo--negrito">Cine</b>Chandon</a>
+        <ul class="opcoes">
+            <li class="opcoes__item"><a href="Salas.html" class="opcoes__link">Salas</a></li>
+            <li class="opcoes__item"><a href="Filmes.html" class="opcoes__link">Filmes</a></li>
+            <li class="opcoes__item"><a href="Sessoes.html" class="opcoes__link">Sessões</a></li>
+            <li class="opcoes__item"><a href="Relatorios.html" class="opcoes__link">Relatórios</a></li>
+        </ul>
+    </header>
+
+    <section class = "banner">
+        <h2 class = "banner__titulo">Já sabe por onde começar?</h2>
+        <p class = "banner__texto">Busque por um filme para encontrar uma sessão ou por um de nossos produtos!</p>
+        <input type="search" class="banner__pesquisa" placeholder= "Qual será sua próxima aventura?">
+    </section>
+    <section class = "carrossel">
+        <h2 class = "carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="Assets/HomemAranha.webp" alt="Poster do filme Homem-Aranha Através do Aranhaverso"></div>
+            <div class="swiper-slide"><img src="Assets/Transformers.webp" alt="Poster do filme Transformers e o Despertar das Feras"></div>
+            <div class="swiper-slide"><img src="Assets/TheFlash.webp" alt="Poster do filme The Flash"></div>
+            <div class="swiper-slide"><img src= "Assets/VelozesEFuriososX.webp" alt="Poster do filme Elementos"></div>
+            <div class="swiper-slide"><img src= "Assets/APequenaSereia.webp" alt="Poster do filme A Pequena Sereia"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!--Primeira Linha-->
+            <div class="card__descricao">
+                <!--Primeira Coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Homem-Aranha: Através do Aranhaverso</h2>
+                    <p class="descricao__texto">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra uma equipe encarregada de proteger sua própria existência.</p>
+                </div>
+                <!--Segunda Coluna-->                   
+                <img src = "Assets/HomemAranha.webp" class="descricao__imagem" alt="Poster do filme Homem-Aranha Através do Aranhaverso" width="170px" height="170px">
+            </div>
+            <!--Segunda Linha-->
+            <div class="card__botoes">
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="rodape">
+        <h2>2023 &#169 Projeto fictício sem fins comerciais.</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Chandon - Sessões</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon.png">
+</head>
+<body>
+    <header class="cabecalho__sessoes">
+        <a href="Index.html" class="container__titulo__sessoes"><b class="container__titulo--negrito__sessoes">Cine</b>Chandon</a>
+        <ul class="opcoes__sessoes">
+            <li class="opcoes__item__sessoes"><a href="Salas.html" class="opcoes__link__sessoes">Salas</a></li>
+            <li class="opcoes__item__sessoes"><a href="Filmes.html" class="opcoes__link__sessoes">Filmes</a></li>
+            <li class="opcoes__item__sessoes"><a href="#" class="opcoes__link__sessoes">Sessões</a></li>
+            <li class="opcoes__item__sessoes"><a href="Relatorios.html" class="opcoes__link__sessoes">Relatórios</a></li>
+        </ul>
+    </header>
+  <body class = "conteudo__sessoes">
+    <div class="container-filme">
+      <label> Escolha um filme:</label>
+      <select id="filme">
+        <option value="25">
+          Homem-Aranha: Através do Aranhaverso (Sala 3D)</option>
+        <option value="35">
+          Transformers: O Despertar das Feras (Sala IMAX)</option>
+        <option value="40">
+          The Flash (Sala 4DX)</option>
+        <option value="70">
+          Velozes e Furiosos X (Sala VIP)</option>
+        <option value="20">
+          A Pequena Sereia (Sala Standart)</option>
+      </select>
+    </div>
+
+    <ul class="amostra">
+      <li>
+        <div class="poltrona"></div>
+        <small>Disponível</small>
+      </li>
+      <li>
+        <div class="poltrona selecionado"></div>
+        <small>Selecionado</small>
+      </li>
+      <li>
+        <div class="poltrona vendido"></div>
+        <small>Vendido</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="tela"></div>
+
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+      </div>
+
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+      </div>
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona vendido"></div>
+      </div>
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+      </div>
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+      </div>
+      <div class="fileira">
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona vendido"></div>
+        <div class="poltrona"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      Você selecionou <span id="count">0</span> assento(s). Total: R$ <span
+        id="total"
+        >0</span
+      >
+    </p>
+    <button class="botao-comprar">Comprar</button>
+
+    <footer class="rodape__sessoes">
+      <h2>2023 &#169 Projeto fictício sem fins comerciais.</h2>
+  </footer>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

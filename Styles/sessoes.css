@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo__sessoes {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+.cabecalho__sessoes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--branco);
+  color: var(--preto);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__titulo__sessoes,
+    .container__titulo--negrito__sessoes{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo__sessoes{
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .container__titulo--negrito__sessoes{
+        font-weight: 700;
+    }
+
+.container__titulo__sessoes {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.opcoes__sessoes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.opcoes__item__sessoes {
+  margin-left: 20px;
+}
+
+.opcoes__link__sessoes {
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: 500;
+}
+
+.conteudo__sessoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container-filme {
+  margin: 20px 0;
+}
+
+.container-filme select {
+  background-color: var(--branco);
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container__sessoes {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.poltrona {
+  background-color: var(--cinza);
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.poltrona.selecionado {
+  background-color: var(--verde);
+}
+
+.poltrona.vendido {
+  background-color: var(--vermelho);
+}
+
+.poltrona:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.poltrona:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.poltrona:not(.vendido):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.amostra .poltrona:not(.vendido):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.amostra {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--cinza);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.amostra li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.amostra li small {
+  margin-left: 2px;
+}
+
+.fileira {
+  display: flex;
+}
+
+.tela {
+  background-color: var(--branco);
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: rgb(158, 248, 158);
+}
+
+.botao-comprar {
+  margin-top: 20px;
+  background-color: var(--verde);
+  color: var(--branco);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao-comprar:hover {
+  background-color: var(--verde-hover);
+}
+
+.rodape__sessoes {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--degrade);
+  color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}

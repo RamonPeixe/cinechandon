@@ -1,0 +1,64 @@
+.filme {
+    margin-bottom: 30px;
+}
+
+.filme__conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.filme__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 22px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.cabecalho {
+    margin-bottom: 30px;
+}
+
+.filme__informacoes {
+    flex: 1;
+}
+
+.filme__sinopse {
+    margin-bottom: 10px;
+}
+
+.filme__sessoes {
+    margin-top: 20px;
+}
+
+.filme__sessoes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.filme__sessoes h3 {
+    margin-bottom: 10px;
+}
+
+.filme__sessoes .botao {
+    margin-top: 10px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--azul-hover);
+  }
+
+.filme__trailer{
+  flex: 1;
+  margin-left: 150px
+}
